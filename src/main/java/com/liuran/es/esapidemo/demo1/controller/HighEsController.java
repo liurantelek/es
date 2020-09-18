@@ -31,4 +31,9 @@ public class HighEsController {
         highEsService.indexDocuments(indexName,document);
         return "index High Es successed";
     }
+
+    @RequestMapping("/get/request")
+    public String getRequest(String indexName,String document,String id){
+        return highEsService.getRequest(indexName,document,id);
+    }
 }

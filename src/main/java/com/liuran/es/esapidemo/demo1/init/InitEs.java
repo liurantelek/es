@@ -28,7 +28,8 @@ public class InitEs {
 
     @PostConstruct
     public void InitEs(){
-        restClient = new RestHighLevelClient(RestClient.builder(new HttpHost("123.57.20.251",9300,"http")));
+        restClient = new RestHighLevelClient(RestClient.builder(new HttpHost("123.57.20.251",9201,"http")
+        ,new HttpHost("123.57.20.251",9202,"http")));
         log.info("elasticSearch init suscceed");
 
     }

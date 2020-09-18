@@ -7,4 +7,6 @@ package com.liuran.es.esapidemo.demo1.service;
  */
 public interface HighEsService {
     String indexDocuments(String indexName, String document);
+
+    String getRequest(String indexName, String document,String id);
 }
