@@ -15,7 +15,8 @@ public class ReindexController {
 
     @RequestMapping("reindex")
     public String reindex(String fromIndex,String toIndex){
-        highEsService.executeReindex(fromIndex,toIndex);
+         highEsService.executeReindex(fromIndex,toIndex);
+         return "成功";
     }
 
 
